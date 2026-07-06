@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="practice3.css">
+</head>
+<body>
+  <section class="main-container">
+  <h1>Let's play Rock, Paper and Scissors!</h1>
+  <div>
+    <h2>Rules to the game</h2>
+    <button class="button" id="rules-button">Rules</button>
+    <ul id="rules-list">
+      <li>Rock breaks scissors.</li>
+      <li>Scissors cuts paper.</li>
+      <li>Paper covers rock.</li>
+      <li>The player with the winning shape takes the round, if both players make the same choice, it is a tie and the round must be played again.</li>
+      <li>First to five wins the match.</li>
+    </ul>
+  </div>
+  <div>
+    <h2>Choose an option</h2>
+    <button class="button" id="rock-btn">Rock</button>
+    <button class="button" id="paper-btn">Paper</button>
+    <button class="button" id="scissor-btn">Scissors</button>
+  </div>
+  <div>
+    <p id="result-message"></p>
+    <p id="player-score" class="scores">Player Score: 0</p>
+    <p id="computer-score" class="scores">Computer Score: 0</p>
+  </div>
+  <div id="results">
+    <p id="result-message1"></p>
+    <button class="button" id="reset-btn">Play Again</button>
+  </div>
+  </section>
+  <script src="practice3.js"></script>
+</body>
+</html>
