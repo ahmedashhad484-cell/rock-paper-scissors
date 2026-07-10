@@ -88,29 +88,30 @@ function checkForWinner(){
         return;
     }
 }
-rulesButton.addEventListener("click", ()=>{
-    if(rulesList.style.visibility==="hidden"){
-        rulesList.style.visibility="visible";
+rulesButton.addEventListener("click", () => {
+    if (rulesList.style.display === "none" || rulesList.style.display === "") {
+        rulesList.style.display = "block";
         rulesList.animate([
-        {opacity: "0"},
-        {opacity: "0.5"},
-        {opacity: "1"}
-            ], {
-        duration: 300,
-        easing: "ease-in-out"
-        });
-    }else{
-        setTimeout(()=>hideElement(rulesList), 290);
-        rulesList.animate([
-            {opacity: "1"},
-            {opacity: "0.5"},
-            {opacity: "0"}
+            { opacity: "0" },
+            { opacity: "0.5" },
+            { opacity: "1" }
         ], {
             duration: 300,
             easing: "ease-in-out"
         });
+    } else {
+        rulesList.animate([
+            { opacity: "1" },
+            { opacity: "0.5" },
+            { opacity: "0" }
+        ], {
+            duration: 300,
+            easing: "ease-in-out"
+        });
+        setTimeout(() => hideElement(rulesList), 290);
     }
-})
-function hideElement(element){
-    element.style.visibility="hidden";
+});
+
+function hideElement(element) {
+    element.style.display = "none";
 }

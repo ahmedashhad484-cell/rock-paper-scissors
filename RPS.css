@@ -10,9 +10,9 @@ body{
     flex-direction: column;
     text-align: center;
     margin: 0 auto;
-    padding: 2%;
+    padding: 1%;
     margin-top: 6%;
-    height: 60vh;
+    min-height: 60vh;
     width: 70vw;
     border-radius: 5px;
 }
@@ -25,6 +25,14 @@ h2{
 #rules-button{
     border-radius: 0px;
     padding: 5px;
+    margin-bottom: 0px;
+}
+#rules-list{
+    margin-top: 0px;
+    margin-bottom: 0;
+}
+#choose-message{
+    margin-top: 0;
 }
 .button{
     background-color: red;
@@ -44,5 +52,7 @@ h2{
 }
 .scores{
     text-align: center;
-    color: black
+    color: white;
+    display: flex;
+    flex-direction: row;
 }
